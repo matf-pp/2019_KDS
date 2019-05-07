@@ -6,7 +6,8 @@ radost: radostan radosna radosno radosnije radosnija radosniji najradosnija najr
 iznenadjenje: iznenadjenje iznenadan iznenadna iznenadno iznenadjujuce
 vera: veran verna verno vernija vernije verniji veru verovanje
 ljubav: ljubav zaljubljen zaljubljena zaljubljeno ljubavno ljubavna ljubavni ljubavi
-osecaj: osecaj osecajan osecajna osecajno 
+osecaj: osecaj osecajan osecajna osecajno
+ljut: ljut ljuta ljuto ljuti ljutito ljutnja ljute ljutog ljutu 
 bol: bol bolno bolna bolni bolnije bolnija bolniji najbolniji bolnog
 usamljeno: usamljeno usamljen usamljena usamljeni usamljenije usamljenija usamljeniji
 euforija: euforija euforican euforicna euforicno euforije euforiju
@@ -22,7 +23,7 @@ strah: strah strasno strasna strasni strasnije strasniji strasnija najstrasnija 
 odlicno: odlicno odlicna odlican odlicnog 
 jad: jad jadan jadna jadni jadnici jadnice jadnica jadi jadnog jadnu jadnije 
 beda: beda bednik bednica bednici bednije bednija bedniji
-muka: muka mucenik mucenica mucenici mucenice mucenicu
+muka: muka mucenik mucenica mucenici mucenice mucenicu mucno mucan mucna mucnu mucnog mucne mucni mucniji mucnijih mucnije mucnija
 nervoza: nervoza nervozno nervozni nervozna nervozniji nervoznija nervoznije nervoze nervozu
 dobar: dobar dobro dobra dobri dobre bolji bolja bolje najbolje najbolji najbolja
 kompjuter: kompjuter kompjutera kompjuteri kompjutere kompjuterom kompjuterima kompjuteru racunar racunari racunarom racunarima 
