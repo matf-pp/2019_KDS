@@ -230,10 +230,10 @@ key: sam 1
     reasmb: Mozda i jeste tako .
 key: ljut
   decomp: * @ljut *
-    reasmb: Zao mi je sto ste (3) .
-    reasmb: Da li mislite da ce Vam Vasa poseta pomoci da ne budete (3) ?
-    reasmb: Sigurno nije lepo kad ste (3) .
-    reasmb: Mozete li da pojasnite kako ste postali (3) ?
+    reasmb: Zao mi je sto ste (2) .
+    reasmb: Da li mislite da ce Vam Vasa poseta pomoci da ne budete (2) ?
+    reasmb: Sigurno nije lepo kad ste (2) .
+    reasmb: Mozete li da pojasnite kako ste postali (2) ?
 key: nervoza
   decomp: *
     reasmb: goto ljut
