@@ -86,7 +86,7 @@ class Key
             tag, content=line.split(": ")
            
             if tag=="initial"
-                @initials<<content
+                @initials.append(content)
             elsif tag.include?("final")
                 @finals.append( content)
             elsif tag.include?("quit")
@@ -422,6 +422,7 @@ class Gui < FXMainWindow
             $chat.removeText(0, $chat.length)
             $selena=Selena.new()
             $selena.ucitaj("doctor.txt")
+            $chat.appendText("Selena>> ")
             $chat.appendText($selena.inicijalizuj())
             $chat.appendText("\n")
         end
@@ -432,9 +433,11 @@ class Gui < FXMainWindow
             $chat.appendText("\n")
             izlaz=$selena.odgovor(tekst)
             if izlaz.nil?
+                $chat.appendText("Selena>> ")
                 $chat.appendText($selena.finalizuj())
                 $chat.appendText("\n")
             else
+                $chat.appendText("Selena>> ")
                 $chat.appendText(izlaz)
                 $chat.appendText("\n")
             end
@@ -447,6 +450,7 @@ class Gui < FXMainWindow
 
             $selena=Selena.new()
             $selena.ucitaj("pass.txt")
+            $chat.appendText("Selena>> ")
             $chat.appendText($selena.inicijalizuj())
             $chat.appendText("\n")
         end
