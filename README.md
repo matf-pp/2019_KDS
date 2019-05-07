@@ -1,7 +1,7 @@
 # SELENA
 
 - **Opis projekta**:
-Projekat je simulacija razgovora čoveka i virtuelnog psihoterapeuta. Predstavlja implementaciju programa ELIZA, prvog NLP (Natural Language Processing-Obrada prirodnog jezika) programa. NLP je podoblast veštačke inteligencije i lingvistike koja se bavi proučavanjem automatskog problema razumevanja prirodnih ljudskih jezika. Tema razgovora će se vrteti oko korisnika i njegovih osecanja. Korisnik će unositi rečenice i SELENA će na osnovu tih rečenica "osmisliti" svoj odgovor. 
+Projekat je simulacija razgovora čoveka i virtuelnog psihoterapeuta. Predstavlja implementaciju programa ELIZA, prvog NLP programa (Natural Language Processing-Obrada prirodnog jezika). NLP je podoblast veštačke inteligencije i lingvistike koja se bavi proučavanjem automatskog problema razumevanja prirodnih ljudskih jezika. Tema razgovora će se vrteti oko korisnika i njegovih osecanja. Korisnik će unositi rečenice i SELENA će na osnovu tih rečenica "osmisliti" svoj odgovor. 
 
 - **Korišćeni jezik**: 
 Ruby
