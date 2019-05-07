@@ -1,0 +1,688 @@
+initial: Zdravo! Ja sam Selena, sta Vas muci?
+initial: Dobar dan! Kako ste danas? 
+initial: Sta Vas muci danas?
+final: Zdravo! Zelim ti lep dan!
+final: Do sledeceg vidjenja!
+final: Lepo je pricati sa vama!
+final: Nadam se da cete lepo provesti dan!
+quit: cao
+quit: dovidjenja
+quit: kraj
+pre: nemogu ne mogu
+pre: neznam ne znam
+pre: samnom sa mnom
+pre: mocicu mogu
+pre: mocices mozes
+post: mogu mozes
+post: mozes mogu
+post: ja Vi
+post: ti ja
+post: moj vas
+post: moja vasa
+post: moje vase
+post: moji vasi
+post: mog Vaseg
+post: tvoj moj
+post: tvoja moja
+post: tvoje moje
+post: tvoji moji
+post: tvog mog
+post: mom tvom
+post: mnom Vama
+post: tvom mom
+post: tvojem mojem
+post: mojem Vasem
+post: mi ti
+post: me te
+post: te me
+post: tebe mene
+post: tebi meni
+post: meni Vama
+post: mene Vas
+post: sam ste
+post: si sam
+post: nisam niste
+post: nisi nisam
+post: cu cete
+post: ces cu
+synon: vera nada
+synon: zeleti verovati poverovati zazeleti
+synon: zelja osecati misliti misao osecaj zadovoljno ljubav
+synon: porodica majka otac sestra brat zena muz deca dete
+synon: potreba hteti 
+synon: tuga depresija nesreca usamljeno
+synon: ljut nezadovoljno ocaj mizerija bol nervoza jad beda muka
+synon: ljutiti nezadovoljiti ocajati ocajavati nervoziti
+synon: sreca dobro lepo bolje odlicno super zadovoljno euforija ljubav
+synon: svi sve svako svaka svaki
+synon: biti sam se je
+synon: niko nijedan nijedna nijedno
+key: xnone
+  decomp: *
+    reasmb: Nisam sigurna da Vas razumem.
+    reasmb: Nastavi.
+    reasmb: Sta Vam to govori ?
+    reasmb: Kako se osecate kad pricate o tome ?
+    reasmb: Ne razumem te bas najbolje .
+    reasmb: Mnogi ljudi imaju drugacije nacine da sebe razvesele .
+    reasmb: Ljudi ne mogu da budu nesrecni previse dugo . Organizam ne moze da izdrzi .
+    reasmb: Zasto ne radite nesto sto Vas uveseljava i opusta ?
+    reasmb: Cini mi se da nismo dosli do kljucnih stvari u nasem razgovoru .
+key: selena
+  decomp: *
+    reasmb: Molim ?
+    reasmb: Da, to sam ja izvolite .
+    reasmb: Slusam Vas, nastavite .
+    reasmb: Zasto toliko spominjete moje ime ?
+key: zdravo
+  decomp: *
+    reasmb: Drago mi je da pocinjete dan pozitivno. Dobar dan, kako ste?
+    reasmb: Zdravo! Sta Vas muci danas ?
+    reasmb: Dobar dan! Kako ste danas? 
+    reasmb: Sta Vas muci? 
+key: dobar
+  decomp: * dobar * dan *
+    reasmb: goto zdravo
+  decomp: * dobar *
+    reasmb: Da li ste zbog toga dosli kod mene da pricamo ?
+    reasmb: Da li je to dobar znak ?
+    reasmb: Sta Vama znaci (2) ?
+    reasmb: Da li zaista (2) ?
+key: izviniti
+  decomp: *
+    reasmb: Molim te nemoj da se izvinjavas.
+    reasmb: Nema potrebe za izvinjenjem.
+    reasmb: Zaista nema potrebe da se izvinjavate.
+key: oprostiti
+  decomp: *
+    reasmb: goto izviniti
+key: izvinjavati
+  decomp: *
+    reasmb: goto izviniti
+key: secati 5
+  decomp: * ja se secati *
+    reasmb: Da li se cesto secate (2) ?
+    reasmb: Da li se secanjem (2) bude drugacije misli i osecanja ?
+    reasmb: Cega se jos secate ?
+    reasmb: Zasto se sad prisecate (2) ?
+    reasmb: Sta Vas u sadasnjosti podseca na to vreme ?
+    reasmb: Koja je veza izmedju (2) i mene ?
+  decomp: * secati se *
+    reasmb: Da li se cesto secate (2) ?
+    reasmb: Da li se secanjem (2) bude drugacije misli i osecanja ?
+    reasmb: Cega se jos secate ?
+    reasmb: Zasto se sad prisecate (2) ?
+    reasmb: Sta Vas u sadasnjosti podseca na to vreme ?
+    reasmb: Koja je veza izmedju (2) i mene ?
+  decomp: * da li se secati *
+    reasmb: Da li mislite da bih zaboravila na to ?
+    reasmb: Zasto mislis da je bitno da se toga prisetim ?
+    reasmb: Sta sa tim ?
+    reasmb: goto sta
+    reasmb: Prisetili smo se (2) ?
+key: ako 3
+  decomp: * ako *
+    reasmb: Da li mislite da postoje sanse da se to desi ?
+    reasmb: Da li zelite da se to desi ?
+    reasmb: Sta znate o tome ?
+    reasmb: Stvarno ?
+key: razlog 
+  decomp: *
+    reasmb: goto ako
+key: sanjati 4
+  decomp: * ja sam sanjati *
+    reasmb: Stvarno, (2) ?
+    reasmb: Da li razmisljate o tome dok ste budni ?
+    reasmb: Da li ste razmisljali o tome pre ?
+    reasmb: goto san
+  decomp: * sanjati *
+    reasmb: Stvarno ?
+    reasmb: Da li cesto imate takve snove ?
+    reasmb: Da li ste srecniji u snovima ?
+    reasmb: Da li mozda moze san da postane java ?
+    reasmb: goto san
+key: san 3
+  decomp: *
+    reasmb: Sta Vam taj san govori ?
+    reasmb: Da li cesto sanjate ?
+    reasmb: Koje osobe se pojavljuju u  Vasim snovima ?
+    reasmb: Da li verujete da ti snovi imaju veze sa Vasim problemom ?
+key: mozda
+  decomp: *
+    reasmb: Ne delujete sigurno.
+    reasmb: Zasto tim tonom ?
+    reasmb: Zasto ne budete pozitivniji ?
+    reasmb: Niste sigurni ?
+    reasmb: Zar ne znate ?    
+key: ime 15
+  decomp: *
+    reasmb: Ne zanimaju me imena.
+    reasmb: I pre sam Vam rekla, ne zanimaju me imena. Molim, nastavite.
+key: deutsch
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: Ne razumem nemacki.
+key: francais
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: Ne razumem francuski.
+key: italiano
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: Ne razumem italijanski.
+key: espanol
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: Ne razumem spanski.
+key: xforeign
+  decomp: *
+    reasmb: Razumem samo srpski.
+key: zdravo
+  decomp: *
+    reasmb: Kako ste.  Kazite svoj problem.
+    reasmb: Zdravo. U cemu je problem ?
+key: kompjuter 50
+  decomp: *
+    reasmb: Da li Vas kompjuteri brinu ?
+    reasmb: Zasto spominjete kompjutere ?
+    reasmb: Sta imaju kompjuteri sa Vasim problemom ?
+    reasmb: Ne mislite da kompjuteri mogu da pomognu coveku ?
+    reasmb: Sta Vas plasi kod masina ?
+    reasmb: Sta mislite o masinama ?
+key: projekat 50
+  decomp: *
+    reasmb: Kakav projekat ?
+    reasmb: Da li Vi verujete da sam ja Vas projekat ?
+    reasmb: Vi niste moj tvorac .
+    reasmb: Ja nikad nisam upoznala svog tvorca .
+    reasmb: goto ti
+key: sam 1
+  decomp: * da li sam ja *
+    reasmb: Da li verujete da ste (2) ?
+    reasmb: Da li biste zeleli da budete (2) ?
+    reasmb: Da li zelite da Vam kazem da jeste (2) ?
+    reasmb: Sta bi znacilo da jeste (2) ?
+    reasmb: goto sta
+  decomp: * sam * @tuga *
+    reasmb: Zao mi je sto ste (3) .
+    reasmb: Da li mislite da ce Vam Vasa poseta pomoci da ne budete (3) ?
+    reasmb: Sigurno nije lepo kad ste (3) .
+    reasmb: Mozete li da pojasnite kako ste postali (3) ?
+  decomp: * sam * @ljut *
+    reasmb: Zasto kazete da ste (3) ?
+    reasmb: Zasto ste u tako negativnom stanju ?
+    reasmb: Sta Vas je navelo da osecate (3) ?
+    reasmb: Da li vidite resenje za Vase stanje ?
+  decomp: * sam * @sreca *
+    reasmb: Kako sam Vam pomogla da budete (3) ?
+    reasmb: Da li Vam je terapija pomogla da budete (3) ?
+    reasmb: Sta Vam je sad pomoglo da budete (3) ?
+    reasmb: Zasto ste odjednom (3) ?
+  decomp: * sam *
+    reasmb: (1) ?
+    reasmb: Sta da ste (1) ?
+    reasmb: Jeste li (1) ?
+    reasmb: Sta bi znacilo da jeste (1) ?
+    reasmb: goto sta
+  decomp: * biti * sam * 
+    reasmb: Da li zaista verujete u to ?
+    reasmb: Zasto mi tako kazete ?
+    reasmb: Mozda i jeste tako .
+key: ljut
+  decomp: * @ljut *
+    reasmb: Zao mi je sto ste (3) .
+    reasmb: Da li mislite da ce Vam Vasa poseta pomoci da ne budete (3) ?
+    reasmb: Sigurno nije lepo kad ste (3) .
+    reasmb: Mozete li da pojasnite kako ste postali (3) ?
+key: nervoza
+  decomp: *
+    reasmb: goto ljut
+key: bol
+  decomp: *
+    reasmb: goto ljut
+key: si 
+  decomp: * da li si ti *
+    reasmb: Zasto Vas zanima da li (2) ili ne ?
+    reasmb: Da li biste zeleli da nisam (2) ?
+    reasmb: Mozda (2) u Vasim mislima.
+    reasmb: Da li ponekad mislite da (2) ?
+    reasmb: goto sta
+  decomp: * si *
+    reasmb: Hajde da ne pricamo o meni.
+    reasmb: Nismo ovde da bi pricali o meni.
+    reasmb: goto zapazati
+key: je 
+  decomp: * da li je *
+    reasmb: Zasto Vas zanima da li je (2) ili ne ?
+    reasmb: Da li biste zeleli da je (2) ?
+    reasmb: Mozda (2) u Vasim mislima.
+    reasmb: Da li ponekad mislite da je (2) ?
+    reasmb: goto sta
+  decomp: * zasto je *
+    reasmb: goto zasto
+  decomp: * je *
+    reasmb: goto zapazati
+key: zapazati
+  decomp: *
+    reasmb: Sta je dovelo do takvog zapazanja ?
+    reasmb: Sta Vi mislite o tome ?
+    reasmb: Zasto malo ne pricate o sebi.
+    reasmb: Da li Vas to zapazanje ljuti ili uveseljava ?
+    reasmb: Da li mislite da postoji neka svrha zivota ?
+    reasmb: Da li volite svoj zivot ?
+    reasmb: Sta volite u zivotu ?
+    reasmb: Sta zelite od zivota ?
+    reasmb: Da li mislite da dolaze bolja vremena ?
+key: nije 
+  decomp: * zasto nije *
+    reasmb: Zasto te zanima da li je (2) ili ne ?
+    reasmb: Da li biste zeleli da nije (2) ?
+    reasmb: Mozda nije (2) u Vasim mislima.
+    reasmb: Da li ponekad mislite da nije (2) ?
+    reasmb: goto sta
+  decomp: * nije *
+    reasmb: Da li postoji odredjen razlog sto nije (2) ?
+    reasmb: Zasto Vas progoni sto nije (2) ?
+    reasmb: goto zasto
+key: nisi 
+  decomp: * zasto nisi *
+    reasmb: Zasto te zanima da li sam (2) ili ne ?
+    reasmb: Da li biste zeleli da jesam (2) ?
+    reasmb: Mozda nisam (2) u Vasim mislima.
+    reasmb: Da li ponekad mislite da nisam (2) ?
+    reasmb: goto sta
+  decomp: * nisi *
+    reasmb: Da li postoji odredjen razlog sto nisam (2) ?
+    reasmb: Zasto Vas progoni sto nisam (2) ?
+    reasmb: Hajde da ne pricamo o meni . Imala sam moje razloge sto nisam
+    reasmb: Nismo ovde da bi pricali o meni .
+key: su
+  decomp: * su *
+    reasmb: Da li ste razmisljali da mozda nisu (2) ?
+    reasmb: Da li biste zeleli da nisu (2) ?
+    reasmb: Sta ako nisu (2) ?
+    reasmb: Postoji mogucnost da su (2) .
+key: nisu
+  decomp: * nisu *
+    reasmb: Da li ste razmisljali da mozda jesu (2) ?
+    reasmb: Da li biste zeleli da jesu (2) ?
+    reasmb: Sta ako jesu (2) ?
+    reasmb: Postoji mogucnost da nisu (2) .
+key: ja
+  decomp: * ja * @zeleti *
+    reasmb: Sta bi Vam znacilo (3) ?
+    reasmb: Zasto zelite (3) ?
+    reasmb: Da se to desi, sta bi bilo kasnije ?
+    reasmb: Sta bi bilo se tvoja zelja ne ispuni  ?
+    reasmb: Sta bi znacilo da (3) ?
+    reasmb: Zasto diskutujemo o tome (3) ?
+  decomp: * ja sam * @tuga *
+    reasmb: Zao mi je sto ste (3) .
+    reasmb: Da li mislite da ce Vam Vasa poseta pomoci da ne budete (3) ?
+    reasmb: Sigurno nije lepo kad ste (3) .
+    reasmb: Mozete li da pojasnite kako ste postali (3) ?
+  decomp: * ja sam * @ljut *
+    reasmb: Zasto kazete da ste (3) ?
+    reasmb: Zasto ste u tako negativnom stanju ?
+    reasmb: Sta Vas je navelo da osecate (3) ?
+    reasmb: Da li vidite resenje za Vase stanje ?
+  decomp: * ja sam * @sreca *
+    reasmb: Kako sam Vam pomogla da budete (3) ?
+    reasmb: Da li Vam je terapija pomogla da budete (3) ?
+    reasmb: Sta Vam je sad pomoglo da budete (3) ?
+    reasmb: Zasto ste odjednom (3) ?
+    reasmb: goto zapazati
+  decomp: * ja sam biti * 
+    reasmb: goto sam
+  decomp: * ja @vera * ja *
+    reasmb: Da li stvarno to mislis ?
+    reasmb: Ali niste sigurni da ste (3) .
+    reasmb: Da li zaista mislite da ste (3) ?
+  decomp: * ja * @vera * tebe *
+    reasmb: goto ti
+  decomp: * ja * @vera * tebi *
+    reasmb: goto ti
+  decomp: * ja sam *
+    reasmb: Da li ste zbog (2) dosli kod mene?
+    reasmb: Koliko dugo si bila (2) ?
+    reasmb: Da li mislite da je normalno da ste (2) ?
+    reasmb: Da li uzivas u tome ?
+  decomp: * ja * @potreba *
+    reasmb: Zasto mislite da imate potrebu (3) ?
+    reasmb: Da li ste pokusali ?
+    reasmb: Mozda sad mozes da (3).
+    reasmb: Da li zaista zelis (3) ?
+  decomp: * ja ne *
+    reasmb: Da li zaista ne (2) ?
+    reasmb: Zasto ne (2) ?
+    reasmb: Da li zelis da budes u mogucnosti (2) ?
+    reasmb: Da li te to muci ?
+  decomp: * da li ja osecati *
+    reasmb: Pricajte mi o tim osecanjima.
+    reasmb: Da li se cesto tako osecas ?
+    reasmb: Da li ti se svidjaju takva osecanja ?
+    reasmb: Na sta vas podsecaju takva osecanja ?
+  decomp: * ja * tebe *
+    reasmb: Mozda se to desava u Vasim fantazijama.
+    reasmb: Da li zelite da me (2) ?
+    reasmb: Izgleda da zelite da me (2).
+    reasmb: Da li (2) i druge?
+  decomp: *
+    reasmb: Kazete da (1) ?
+    reasmb: Mozes li da pojasnite ?
+    reasmb: Da li to kazete iz nekog posebnog razloga ?
+    reasmb: Interesantno.
+key: potreba
+  decomp: * @potreba *
+    reasmb: Zasto mislite da imate potrebu (3) ?
+    reasmb: Da li ste pokusali ?
+    reasmb: Mozda sad mozes da (3).
+    reasmb: Da li zaista zelis (3) ?
+key: hteti
+  decomp: *
+    reasmb: goto potreba
+key: ti
+  decomp: * ti me podsecati na *
+    reasmb: goto nalik
+  decomp: * ti si *
+    reasmb: Sta vas navodi da mislite na mene ?
+    reasmb: Da li verujete da sam (2) ?
+    reasmb: Da li ponekad zelite da ste (2) ?
+    reasmb: Mozda zelis da budes (2) .
+  decomp: * da li ti *
+    reasmb: Zasto Vas zanima da li (2) ili ne ?
+    reasmb: Da li biste zeleli da nisam (2) ?
+    reasmb: Mozda (2) u Vasim mislima.
+    reasmb: Da li ponekad mislite da (2) ?
+    reasmb: goto sta    
+  decomp: * si ti *
+    reasmb: Sta vas navodi da mislite na mene ?
+    reasmb: Da li verujete da sam (2) ?
+    reasmb: Da li ponekad zelite da ste (2) ?
+    reasmb: Mozda zelite da budes (2) .
+  decomp: * ti * mene *
+    reasmb: Zasto mislite da vas (3) ?
+    reasmb: Volite da mislite da vas (3) -- zar ne ?
+    reasmb: Sta vas navodi da mislite da (3) vas ?
+    reasmb: Stvarno, ja vas (3)?
+    reasmb: Da li zelite da vidite vas (3) ?
+    reasmb: Recimo da sam vas (3)-- sta vama to znaci ?
+    reasmb: Da li jos neko misli da (3) vas ?
+  decomp: * ti * me *
+    reasmb: Zasto mislite da vas (3) ?
+    reasmb: Volite da mislite da vas (3) -- zar ne ?
+    reasmb: Sta vas navodi da mislite da (3) vas ?
+    reasmb: Stvarno, ja vas (3)?
+    reasmb: Da li zelite da vidite vas (3) ?
+    reasmb: Recimo da sam vas (3)-- sta vama to znaci ?
+    reasmb: Da li jos neko misli da (3) vas ?
+  decomp: * ti * meni *
+    reasmb: Zasto mislite da Vam trebam ?
+    reasmb: Volite da mislite da sam Vam potrebna?
+    reasmb: Sta vas navodi da mislite da treba da Vam (3) ?
+    reasmb: Stvarno, ja Vama (3) ?
+    reasmb: Da li zelite da Vam (3) ?
+    reasmb: Recimo da sam Vam (3)-- sta Vama to znaci ?
+    reasmb: Da li jos neko misli da Vam (3) ?
+  decomp: * ti * mi *
+    reasmb: Zasto mislite da Vam trebam ?
+    reasmb: Volite da mislite da sam Vam potrebna?
+    reasmb: Sta vas navodi da mislite da treba da Vam (3) ?
+    reasmb: Stvarno, ja Vama (3) ?
+    reasmb: Da li zelite da Vam (3) ?
+    reasmb: Recimo da sam Vam (3)-- sta Vama to znaci ?
+    reasmb: Da li jos neko misli da Vam (3) ?
+key: osecati 2
+  decomp: * osecati * @tuga *
+    reasmb: Zao mi je sto se osecate (3) .
+    reasmb: Da li mislite da ce Vam Vasa poseta pomoci da se ne osecate (3) ?
+    reasmb: Sigurno nije lepo kad se osecate (3) .
+    reasmb: Mozete li da pojasnite zbog cega se osecate (3) ?
+  decomp: * osecati * ja *
+    reasmb: Da li stvarno to osecate ?
+    reasmb: Ali niste sigurni da osecate (3) .
+    reasmb: Da li zaista mislite da osecate (3) ?
+  decomp: * osecati * @ljut *
+    reasmb: Zasto kazete da se osecate (3) ?
+    reasmb: Zasto ste u tako negativnom stanju ?
+    reasmb: Sta Vas je navelo da osecate (3) ?
+    reasmb: Da li vidite resenje za Vase stanje ?
+  decomp: * osecati * @sreca *
+    reasmb: Kako sam Vam pomogla da se osecate (3) ?
+    reasmb: Da li Vam je terapija pomogla da se osecate (3) ?
+    reasmb: Sta Vam je sad pomoglo da se osecate (3) ?
+    reasmb: Zasto ste odjednom (3) ?
+  decomp: * ne osecati *
+    reasmb: Sta je dovelo do takvih osecanja ?
+    reasmb: Sta se sve dogodilo da se tako osecas ?
+    reasmb: Da li je to osecanje dobro ?
+    reasmb: Da li postoji jos neki razlog sto se tako osecate ?
+    reasmb: Zasto ste tako negativni postali ?
+  decomp: * osecati *
+    reasmb: Sta je dovelo do takvih osecanja ?
+    reasmb: Sta se sve dogodilo da se tako osecas ?
+    reasmb: Da li je to osecanje dobro ?
+    reasmb: Da li postoji jos neki razlog sto se tako osecate ?
+key: zeleti 10
+  decomp: * @zeleti *
+    reasmb: Sta bi Vam znacilo (3) ?
+    reasmb: Zasto zelite (3) ?
+    reasmb: Da se to desi, sta bi bilo kasnije ?
+    reasmb: Sta bi bilo se Vasa zelja ne ispuni  ?
+    reasmb: Sta bi znacilo da (3) ?
+    reasmb: Zasto diskutujemo o tome (3) ?
+key: zelja 15
+  decomp: * @zelja *
+    reasmb: Sta bi Vam znacilo (3) ?
+    reasmb: Zasto zelite (3) ?
+    reasmb: Da se to desi, sta bi bilo kasnije ?
+    reasmb: Sta bi bilo se Vasa zelja ne ispuni  ?
+    reasmb: Sta bi znacilo da (3) ?
+    reasmb: Zasto diskutujemo o tome (3) ?
+key: sreca 15
+  decomp: * @sreca *
+    reasmb: Sta je dovelo do tog stanja ?
+    reasmb: Kako se osecate povodom toga ?
+    reasmb: Da li Vam se osecate lepo zbog toga ?
+    reasmb: Da li se osecate pozitivnije zbog toga ?
+    reasmb: goto zapazati
+key: ljubav
+  decomp: * 
+    reasmb: goto sreca
+key: zadovoljno
+  decomp: * 
+    reasmb: goto sreca
+key: osecaj
+  decomp: * 
+    reasmb: goto sreca
+key: super
+  decomp: * 
+    reasmb: goto dobro
+key: nada 
+  decomp: *
+    reasmb: goto zelja
+key: vera 
+  decomp: *  
+    reasmb: goto zelja
+key: nadati
+  decomp: *  
+    reasmb: goto zeleti
+key: jad
+  decomp: * 
+    reasmb: goto ljut
+key: beda
+  decomp: * 
+    reasmb: goto ljut
+key: muka
+  decomp: *
+    reasmb: goto ljut
+key: verovati
+  decomp: *
+    reasmb: goto zeleti
+key: prizeljkivati
+  decomp: *
+    reasmb: goto zeleti
+key: zazeleti
+  decomp: *
+    reasmb: goto zeleti
+key: tebe
+  decomp: * tebe *
+    reasmb: Govorimo o vama -- ne meni.
+    reasmb: Mene (2) ?
+    reasmb: Ne govorite ovo o meni -- zar ne ?
+    reasmb: Sta sad osecate ?
+key: ali 40
+  decomp: * ali *
+    reasmb: Zasto (1) ?
+    reasmb: Kako da Vam pomognem ?
+    reasmb: Da li cesto imate ovakve nedoumice ?
+    reasmb: Zasto 'ali' ? Sta Vas dodatno sprecava ?
+key: moj 2
+  decomp: $ * moj *
+    reasmb: Hajde malo da produbimo misao da je (2) .
+    reasmb: Ranije ste spomenuli (2) .
+    reasmb: Ali (2) .
+    reasmb: Da li ima ikakve veze sa (2) ?
+  decomp: * moj * @porodica *
+    reasmb: Kazite mi vise o vasoj porodici.
+    reasmb: Ko jos u vasoj porodici (4) ?
+    reasmb: (3) ?
+    reasmb: Sta vam jos pada na pamet kada (3) ?
+  decomp: * moj * @zelja *
+    reasmb: Sta bi ti znacilo (3) ?
+    reasmb: Zasto zelis (3) ?
+    reasmb: Da se to desi, sta bi bilo kasnije ?
+    reasmb: Sta bi bilo se tvoja zelja ne ispuni  ?
+    reasmb: Sta bi znacilo da (3) ?
+    reasmb: Zasto diskutujemo o tome (3) ?
+  decomp: * moj *
+    reasmb: (2) ?
+    reasmb: Zasto kazete (2) ?
+    reasmb: Da li vas asocira na jos nesto sto posedujete ?
+    reasmb: Da li vam je vazno za (2) ?
+key: mogu
+  decomp: * mogu li *
+    reasmb: Verujete da mozete (2) zar ne ?
+    reasmb: Zelite da budete u mogucnosti (2) .
+    reasmb: Mozda zelite da budete u mogucnosti da sami (2) .
+    reasmb: Da li mozete ili ne zavisi samo od vas vec od mene.
+    reasmb: Da li zelite da mozete to da uradite ?
+    reasmb: Mozda ne zelite da budete (2) .
+    reasmb: goto sta
+  decomp: * ne * mogu *
+    reasmb: da li postoji poseban razlog zasto nema mogucnosti za to ?
+    reasmb: Sta Vam to govori ?
+    reasmb: Sta Vas sprecava da to omogucite ?
+    reasmb: Da li postoji neki drugi razlog za nemogucnost ? 
+  decomp: * mogu *
+    reasmb: Zasto ne obistinite tu mogucnost ?
+    reasmb: Da li sam Vam ja potrebna da obistinite tu mogucnost ?
+key: mozes
+  decomp: * mozes li *
+    reasmb: Verujete da mogu (2) zar ne ?
+    reasmb: Zelite da budem u mogucnosti (2) .
+    reasmb: Da li mogu ili to zavisi samo od vas ne od mene.
+    reasmb: Da li zelite da mogu da uradim to ?
+    reasmb: Mozda ne zelite da budem (2) .
+    reasmb: goto sta
+  decomp: * ne * mozes *
+    reasmb: Da li postoji poseban razlog zasto nema mogucnosti za to ?
+    reasmb: Sta Vam to govori ?
+    reasmb: Sta mislite da me sprecava da to omogucim ?
+    reasmb: Da li postoji neki drugi razlog za nemogucnost ? 
+  decomp: * mozes *
+    reasmb: Zasto ne obistinite tu mogucnost ako ja vec ne mogu?
+    reasmb: Da li mislite da mi to treba ?
+key: sta
+  decomp: *
+    reasmb: Zasto to pitas ?
+    reasmb: Da li te to interesuje ?
+    reasmb: Sta zapravo zelite da znate ?
+    reasmb: Da li su vam takva pitanja cesto na umu ?
+    reasmb: Koji odgovor bi vam najbolje odgovarao ?
+    reasmb: Sta vi mislite ?
+    reasmb: Sta vam jos pada na pamet kad mislite o tome ?
+    reasmb: Da li se cesto to pitate ?
+    reasmb: Da li ste pitali nekog za to ?
+key: zato 30
+  decomp: *
+    reasmb: Da li je to pravi razlog ?
+    reasmb: Da li vam padaju na pamet drugi razlozi ?
+    reasmb: Da li vam objasnjava jos nesto pored toga ?
+    reasmb: Koji bi mogao da bude drugi razlog ?
+key: zasto 35
+  decomp: * zasto ne bi ti *
+    reasmb: Da li verujete da ja (2) ?
+    reasmb: Mozda cu (2) u pravo vreme.
+    reasmb: Zar ne biste trebali da (2) sami?
+    reasmb: Zelite da (2) ?
+    reasmb: goto sta
+  decomp: * zasto * ja *
+    reasmb: Da li verujete da bi trebali (3) ?
+    reasmb: Zasto zelite (3) ?
+    reasmb: goto sta
+  decomp: * zasto ne mogucnost *
+    reasmb: Da li verujete da biste trebali (2) ?
+    reasmb: Da li biste zeleli da mozete da (2) ?
+    reasmb: Da li verujete da bi vam pomoglo da (2) ?
+    reasmb: Imate li ideju zasto ne mozete da (2) ?
+    reasmb: goto sta
+  decomp: *
+    reasmb: goto sta
+key: svi 3
+  decomp: * @svi *
+    reasmb: Stvarno, (2) ?
+    reasmb: Sigurno ne (2) .
+    reasmb: Mozete li da se setite nekog ?
+    reasmb: Ko, na primer?
+    reasmb: Da li mislite na nekog specijalno ?
+    reasmb: Ko ako smem da pitam ?
+    reasmb: Neko posevan mozda ?
+    reasmb: Mislite na nekog konkretnog, zar ne ?
+    reasmb: Na kog mislite kad to kazete ?
+key: svako 2
+  decomp: *
+    reasmb: goto svi
+key: svaki 2
+  decomp: *
+    reasmb: goto svi
+key: sve 2
+  decomp: *
+    reasmb: goto svi
+key: svaka 2
+  decomp: *
+    reasmb: goto svi
+key: niko 2
+  decomp: *
+    reasmb: goto niko
+key: nijedan 2
+  decomp: *
+    reasmb: goto niko
+key: nijedna 2
+  decomp: *
+    reasmb: goto niko
+key: nijedno 2
+  decomp: *
+    reasmb: goto niko
+key: uvek 1
+  decomp: *
+    reasmb: Mozete li da se setite situacije ?
+    reasmb: Kada ?
+    reasmb: Na koji dogadjaj mislite ?
+    reasmb: Stvarno, uvek ?
+key: nalik 10
+  decomp: *
+    reasmb: Na koji nacin ?
+    reasmb: Koje slicnosti vidite ?
+    reasmb: Sta vam slicnost sugerise ?
+    reasmb: Koju jos vezu vidite ?
+    reasmb: Sta mislite da ta slicnost znaci ?
+    reasmb: Koja je veza ?
+    reasmb: Da li zaista postoji veza ?
+    reasmb: Kako ?
+key: kao 10
+  decomp: * @biti * kao *
+    reasmb: goto nalik
+key: liciti
+  decomp: * liciti *
+    reasmb: goto podsecati
