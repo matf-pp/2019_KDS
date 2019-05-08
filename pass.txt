@@ -26,8 +26,10 @@ post: tvoj moj
 post: tvoja moja
 post: tvoje moje
 post: tvoji moji
+post: tvojeg mojeg
+post: mojeg Vaseg
 post: tvog mog
-post: mom tvom
+post: mom Vasem
 post: mnom Vama
 post: tvom mom
 post: tvojem mojem
@@ -35,6 +37,8 @@ post: mojem Vasem
 post: mi ti
 post: me te
 post: te me
+post: mojoj Vasoj
+post: tvojoj mojoj
 post: tebe mene
 post: tebi meni
 post: meni Vama
@@ -228,6 +232,7 @@ key: sam 1
     reasmb: Da li zaista verujete u to ?
     reasmb: Zasto mi tako kazete ?
     reasmb: Mozda i jeste tako .
+    reasmb: goto kao
 key: ljut
   decomp: * @ljut *
     reasmb: Zao mi je sto ste (2) .
@@ -637,9 +642,20 @@ key: svi 3
     reasmb: Ko, na primer?
     reasmb: Da li mislite na nekog specijalno ?
     reasmb: Ko ako smem da pitam ?
-    reasmb: Neko posevan mozda ?
+    reasmb: Neko poseban mozda ?
     reasmb: Mislite na nekog konkretnog, zar ne ?
     reasmb: Na kog mislite kad to kazete ?
+key: niko 3
+  decomp: * @niko *
+    reasmb: Stvarno, (2) ?
+    reasmb: Sigurno ne (2) .
+    reasmb: Zaista ne mozete da se setite nekog ?
+    reasmb: Mozda Vam se pricinilo ?
+    reasmb: Mozda postoji neko ?
+    reasmb: Zasto (2) ?
+    reasmb: Niko poseban ?
+    reasmb: Zasto tako gledate na svet ?
+    reasmb: Ne mozete nikog da se setite ?
 key: svako 2
   decomp: *
     reasmb: goto svi
